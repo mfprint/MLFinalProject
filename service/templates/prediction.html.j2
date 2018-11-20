@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>#TweetPolítico</title>
+        <link rel="stylesheet" href="/css/prediction.css" />
+        <script src="/js/jquery.min.js" charset="utf-8"></script>
+        <script src="/js/prediction.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="header">
+            <a href="/">
+                <img src="/assets/back.png" alt="" />
+                REGRESAR
+            </a>
+            <h1 class="title"><span>#</span>TweetPolítico</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="graph">
+                    <div class="bar-box">
+                        <div class="bar-wrap">
+                            <div class="bar" id="pan" data-perc="{{pan}}">
+                            </div>
+                        </div>
+                        <img src="/assets/pan.png" alt="" />
+                        <p></p>
+                    </div>
+                    <div class="bar-box">
+                        <div class="bar-wrap">
+                            <div class="bar" id="pri" data-perc="{{pri}}">
+                            </div>
+                        </div>
+                        <img src="/assets/pri.png" alt="" />
+                        <p></p>
+                    </div>
+                    <div class="bar-box">
+                        <div class="bar-wrap">
+                            <div class="bar" id="morena" data-perc="{{morena}}">
+                            </div>
+                        </div>
+                        <img src="/assets/morena.png" alt="" />
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

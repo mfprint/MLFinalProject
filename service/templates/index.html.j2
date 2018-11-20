@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>#TweetPolítico</title>
+        <link rel="stylesheet" href="/css/index.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-box">
+                <h1 class="title"><span>#</span>TweetPolítico</h1>
+                <p>Descubre la tendencia política de un <span id="twitter">tweet</span>.</p>
+                <form action="/predict" method="post">
+                    <textarea name="tweet"></textarea>
+                    <div class="lower-side">
+                        <p>Escribe un tweet</p>
+                        <button type="submit" name="button">Iniciar</button>
+                    </div>
+                </form>
+                <div class="parties">
+                    <p>Partidos a evaluar:</p>
+                    <img src="assets/pan.png" alt="" />
+                    <img src="assets/pri.png" alt="" />
+                    <img src="assets/morena.png" alt="" />
+                </div>
+                <div class="peninsula-container">
+                    Powered by
+                    <img src="/assets/peninsula.png" alt="" />
+                    <p id="peninsula">Península AI</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

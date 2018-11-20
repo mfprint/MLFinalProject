@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-weight: 300;
+    font-family: 'Roboto', monospace;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        transition-duration: 0.4s;
+        border-radius: 5px;
+
+        img {
+            width: 30px;
+            filter: invert(100%);
+        }
+
+        &:hover {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+
+            img {
+                filter: none;
+            }
+        }
+    }
+
+    .title {
+        font-size: 2em;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: inline-block;
+
+        span {
+            color: rgba(22, 115, 10, 1);
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph {
+    display: flex;
+
+    .bar-box {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        .bar-wrap {
+            height: 300px;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .bar {
+            width: 100px;
+            height: 300px;
+            margin: 0 10px;
+
+            &#pan {
+                background-color: #01308F;
+            }
+
+            &#pri {
+                background-color: #00933D;
+            }
+
+            &#morena {
+                background-color: #C13128;
+            }
+        }
+
+        img {
+            width: 50px;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+    }
+}

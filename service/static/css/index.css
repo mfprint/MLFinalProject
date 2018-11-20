@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-weight: 300;
+  font-family: "Roboto", monospace;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-box {
+  color: black;
+  text-align: center;
+}
+.container .container-box .title {
+  font-size: 5em;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.container .container-box .title span {
+  color: #16730a;
+}
+.container .container-box p {
+  font-size: 1.5em;
+}
+.container .container-box p #twitter {
+  color: #b32020;
+  font-weight: 400;
+}
+.container .container-box form {
+  margin-top: 20px;
+}
+.container .container-box textarea {
+  border: none;
+  font-size: 1.5em;
+  padding: 10px;
+  outline: none;
+  border: 2px solid black;
+  width: 80%;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  resize: none;
+}
+.container .container-box .lower-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 10px auto;
+}
+.container .container-box .lower-side p {
+  font-size: 1.2em;
+}
+.container .container-box .lower-side button {
+  border: none;
+  font-size: 1.5em;
+  padding: 10px;
+  background-color: #a6a6a6;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  transition-duration: 0.3s;
+}
+.container .container-box .lower-side button:hover {
+  background-color: #2DAAE2;
+  padding: 10px 20px;
+}
+.container .container-box .parties {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  color: #959595;
+}
+.container .container-box .parties img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.peninsula-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 1em;
+}
+.peninsula-container img {
+  width: 40px;
+  margin: 0 5px;
+}
+.peninsula-container #peninsula {
+  color: #1fa840;
+}
+
+/*# sourceMappingURL=index.css.map */

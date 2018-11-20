@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-weight: 300;
+    font-family: 'Roboto', monospace;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-box {
+        color: black;
+        text-align: center;
+
+        .title {
+            font-size: 5em;
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: inline-block;
+
+            span {
+                color: rgba(22, 115, 10, 1);
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+
+            #twitter {
+                // color: rgba(175, 25, 87, 1);
+                color: rgba(179, 32, 32, 1);
+                font-weight: 400;
+            }
+        }
+
+        form {
+            margin-top: 20px
+        }
+
+        textarea {
+            border: none;
+            font-size: 1.5em;
+            padding: 10px;
+            outline: none;
+            border: 2px solid black;
+            width: 80%;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+            resize: none;
+        }
+
+        .lower-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+            margin: 10px auto;
+
+            p {
+                font-size: 1.2em;
+            }
+
+            button {
+                border: none;
+                font-size: 1.5em;
+                padding: 10px;
+                background-color: rgba(166, 166, 166, 1);
+                color: white;
+                border-radius: 5px;
+                outline: none;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    background-color: #2DAAE2;
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+        .parties {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            color: rgba(149, 149, 149, 1);
+
+            img {
+                width: 50px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.peninsula-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1em;
+
+    img {
+        width: 40px;
+        margin: 0 5px;
+    }
+
+    #peninsula {
+        color: rgba(31, 168, 64, 1);
+    }
+}
