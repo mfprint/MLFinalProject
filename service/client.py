@@ -8,9 +8,7 @@ import tensorflow as tf
 
 class Client():
     def __init__(self):
-        self.tokenizer = Tokenizer(num_words=5000)
-        self.labels = ['PRI', 'MORENA', 'PAN']
-
+        self.tokenizer = Tokenizer(num_words=10000)
         with open('./ai/dictionary.json', 'r') as dictionary_file:
             self.dictionary = json.load(dictionary_file)
 
@@ -19,9 +17,7 @@ class Client():
         json_file.close()
         self.model = model_from_json(loaded_model_json)
         self.model.load_weights('./ai/weights.h5')
-
-        global graph
-        graph = tf.get_default_graph()
+        self.graph = tf.get_default_graph()
 
     def convert_text_to_index_array(self, text):
         words = kpt.text_to_word_sequence(text)
@@ -34,11 +30,9 @@ class Client():
         return wordIndices
 
     def predict(self, text):
-        global graph
         testArr = self.convert_text_to_index_array(text)
         input = self.tokenizer.sequences_to_matrix([testArr], mode='binary')
 
-        with graph.as_default():
+        with self.graph.as_default():
             pred = self.model.predict(input)
-        # return self.labels[np.argmax(pred)]
         return pred

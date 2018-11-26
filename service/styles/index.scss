@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Mono:300');
 
 * {
     margin: 0;
@@ -117,5 +117,6 @@
 
     #peninsula {
         color: rgba(31, 168, 64, 1);
+        font-family: 'Roboto Mono', monospace;
     }
 }
